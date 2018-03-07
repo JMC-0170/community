@@ -16,15 +16,23 @@
 <div class="container color-light"  [@goals]="goals.length ">
     <div class ="col">
      <ul>
-       <li   *ngFor="let goal of goals; let i = index ">
+       <li  *ngFor="let goal of goals; let i = index ">
       
-        <p  class="life-container">
+        <p   class="life-container  ">
         <!-- (click)="removeItem(i)" > -->
             {{goal}}   
-       
-            <input type="submit" class="voteBtn" value="Vote" > 
-          
-          </p>
+        </p>
+            <div class="container voteContainer">
+                <div class ="col">
+                    <p style="text-indent: 2em;">User Name: </p> 
+                    <p style="text-indent: 2em;">  Date :</p>
+                  </div>
+                
+                  <div class ="col">
+                      <input type="submit" align="right" class="voteBtn" value="Vote" >
+                    </div>
+                
+            </div>
           
         </li>
         </ul>

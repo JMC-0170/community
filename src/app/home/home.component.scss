@@ -36,9 +36,13 @@ input.voteBtn {
     margin-bottom:1em;
     cursor:pointer;
 }
+.voteContainer {
+    display: grid;
+    grid-template-columns: 90% auto;
+}
 .life-container {
     background:#3FA0E1;
-    padding:.5em;
+    padding:1.5em;
     font-weight:bold;
     cursor:pointer;
 }
